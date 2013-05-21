@@ -37,6 +37,12 @@ if __name__ == '__main__':
    port = 8080
    zapp = imp.load_source('application', 'wsgi/application')
 
+   print '\033[33mCurrent sys.path:'
+   for i in sys.path:
+      print '\t' + i
+   print '\033[0m'
+
+
    #  Use gevent if we have it, otherwise run a simple httpd server.
    print 'Starting WSGIServer on %s:%d ... ' % (ip, port)
    try:
