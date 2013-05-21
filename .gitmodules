@@ -1,0 +1,3 @@
+[submodule "wict"]
+	path = wict
+	url = git@github.com:fcoelho/wict.git
